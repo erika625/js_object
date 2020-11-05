@@ -222,7 +222,7 @@ printMaxNum(50,100);
 // // 実行結果
 // 16
 function getSquared(num){
-	return num * num
+	return num * num  				// return は引数と逆方向に値を送る(実行した側に戻される値)
 }
 var result = getSquared(4);
 console.log(result);
@@ -242,6 +242,8 @@ function createSelfIntroductionText(name){
 	var msg = '私の名前は' + name + 'です';
 	return msg;
 }
+// 定数は再代入できない 基本的に全部大文字で書く
+const COMPANY = 'NexSeed';
 var message = createSelfIntroductionText('平田');
 console.log(message);
 
